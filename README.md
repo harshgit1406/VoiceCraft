@@ -100,9 +100,9 @@ echo GOOD LUCK
 conda create -n voicecraft python=3.9.16
 conda activate voicecraft
 
-pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft
 pip install xformers==0.0.22
 pip install torchaudio==2.0.2 torch==2.0.1 # this assumes your system is compatible with CUDA 11.7, otherwise checkout https://pytorch.org/get-started/previous-versions/#v201
+pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft
 apt-get install ffmpeg # if you don't already have ffmpeg installed
 apt-get install espeak-ng # backend for the phonemizer installed below
 pip install tensorboard==2.16.2
